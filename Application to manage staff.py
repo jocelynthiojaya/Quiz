@@ -49,6 +49,7 @@ while exitprogram == False:
         newPerson = Staff()
         newPerson.newStaff()
         staffs.append(newPerson)
+        print(staffs)
     elif inputChoice == '4':
         exitprogram = True
     else:
