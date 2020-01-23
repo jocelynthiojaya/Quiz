@@ -67,3 +67,45 @@ while i in x_17:
 #skrg x_17 udh ga punya a
 print('\n')
 
+#21
+print('21:')
+class tester:     
+    def __init__(self, iD):         
+        self.id = iD  
+        iD="224"   
+
+temp = tester(12) 
+print(temp.id)
+print('\n')
+
+#22
+print('22:')
+class Count:     
+    def __init__(self, count = 0):         
+        self.__count = count   
+
+c1 = Count(2) 
+c2 = Count(2) 
+print(id(c1) == id(c2), end = " ")   
+#different instances of a class has different id
+
+s1 = "Good" 
+s2 = "Good" 
+print(id(s1) == id(s2)) 
+# normal variable with same content has same id
+print('\n')
+
+#23
+print('23:')
+class Name:     
+    def __init__(self, firstName, mi, lastName):         
+        self.firstName = firstName         
+        self.mi = mi         
+        self.lastName = lastName   
+
+firstName = "John" 
+name = Name(firstName, 'F', "Smith") 
+firstName = "Peter" 
+name.lastName = "Pan" 
+print(name.firstName, name.lastName) 
+print('\n')

@@ -36,7 +36,7 @@ class Confundo(Spell):
 spell = Confundo()  
 #spell.execute()
 #study_spell(Confundo())
-spell.study_spell(spell)  
+spell.study_spell(Confundo())  
 #study_spell(Confundo())
 
 #1. The Parent class is Spell, the child classes are Accio and Confundo

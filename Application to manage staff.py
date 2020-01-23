@@ -49,7 +49,6 @@ while exitprogram == False:
     print('3. View Summary Data')
     print('4. Save and Exit')
 
-
     inputChoice = input('Enter an input: ')
     if inputChoice == '1':
         newPerson = Staff()
