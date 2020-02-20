@@ -109,3 +109,76 @@ firstName = "Peter"
 name.lastName = "Pan" 
 print(name.firstName, name.lastName) 
 print('\n')
+
+#25
+print('25:')
+myList = [1, 5, 5, 5, 5, 1] 
+max = myList[0] 
+indexOfMax = 0 
+for i in range(1, len(myList)):     
+    if myList[i] > max:         
+        max = myList[i]
+        indexOfMax = i 
+
+print(indexOfMax)
+print('\n')
+
+#26
+print('26:')
+def q(i, values = []):     
+    values.append(i)     
+    return values   
+
+q(1) 
+q(2) 
+v = q(3) 
+print(v)
+print('\n')
+
+#27
+print('27:')
+values = [[3, 4, 5, 1], [33, 6, 1, 2]]   
+v = values[0][0] 
+for row in range(0, len(values)):     
+    for column in range(0, len(values[row])):         
+        if v < values[row][column]:             
+            v = values[row][column] 
+print(v) 
+print('\n')
+
+#28
+print('28:')
+numberGames = {} 
+numberGames[(1,2,4)] = 8 
+numberGames[(4,2,1)] = 10 
+numberGames[(1,2)] = 12
+sum = 0 
+for k in numberGames:     
+    sum += numberGames[k] 
+print(len(numberGames) + sum)
+print('\n')
+
+#30
+print('30:')
+class change:     
+    def __init__(self, x, y, z):         
+        self.a = x + y + z   
+
+x = change(1,2,3) 
+y = getattr(x, 'a') 
+setattr(x, 'a', y+1) 
+print(x.a)
+print('\n')
+
+#33
+print('33:')
+class A():     
+    def disp(self):        
+        print("A disp()") 
+
+class B(A):     
+    pass
+
+obj = B() 
+obj.disp()
+print('\n')
